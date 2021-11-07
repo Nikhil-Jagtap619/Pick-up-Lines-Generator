@@ -40,5 +40,13 @@ line.grid(pady=(70))
 nextLine = Button(root, text="get another❤", width=14, font=("consolas"), bg="#2a9d8f", fg="#dee2e6", command=pickuplines)
 nextLine.grid(pady=(10))
 
+#user input 
+userTag = Label(root, text="Have something unique?", font=("monospace", 15))
+userTag.grid(pady=(7))
+
+entrybox = StringVar()
+userInput = Entry(root, text=entrybox, width=70)
+userInput.grid(pady=(5))
+
 
 root.mainloop()

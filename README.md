@@ -5,5 +5,6 @@
   <li>Unique SQLite DataBase</li>
  </ul>
 
-*Underconstruction GUI Application*
+* AI Underconstruction*
+### The application's motive is to help our users to come up the best Pick-up line ever, and increase their chances to date, Skill up your Romantic side 
 

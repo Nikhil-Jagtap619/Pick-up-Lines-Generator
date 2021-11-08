@@ -14,6 +14,17 @@ def pickuplines():
         lineStr=lineStr.replace(char,"")
     line.config(text=lineStr)
 
+def addline():
+    userLine = str(userInput.get())
+    if userLine=="":
+        messagebox.showwarning("warning","can't add empty value")
+    else:
+        cur.execute('''INSERT INTO Picklines (line) VALUES (?) ''',(userLine,))
+        messagebox.showinfo("status","Thank you for your Contribution!")
+        conn.commit()
+        cur.close()
+
+
 
 
 
@@ -47,6 +58,13 @@ userTag.grid(pady=(7))
 entrybox = StringVar()
 userInput = Entry(root, text=entrybox, width=70)
 userInput.grid(pady=(5))
+
+share = Button(root, text="add", width=7, font=("consolas"), bg="#2a9d8f", fg="#dee2e6", command=addline)
+share.grid(pady=(4))
+
+ai = Label(root, text="Our AI will decide whether your line is good enough to get added, so please be relevantly romantic \n \n Made with ❤ by Senpai_Knock")
+ai.grid(pady=(16,0))
+
 
 
 root.mainloop()

@@ -6,5 +6,5 @@
  </ul>
 
 * AI Underconstruction*
-### The application's motive is to help our users to come up the best Pick-up line ever, and increase their chances to date, Skill up your Romantic side 
+### The goal of the software is to help our customers come up with the best pick-up line they've ever heard and boost their chances of dating.
 

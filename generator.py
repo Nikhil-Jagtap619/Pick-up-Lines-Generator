@@ -21,6 +21,7 @@ def addline():
     else:
         cur.execute('''INSERT INTO Picklines (line) VALUES (?) ''',(userLine,))
         messagebox.showinfo("status","Thank you for your Contribution!")
+        userInput.delete(0,"end")
         conn.commit()
         cur.close()
 
